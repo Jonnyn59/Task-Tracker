@@ -1,36 +1,39 @@
 #enter {
     position: relative;
-    background-image: url(/src/img/enter\(2\).png);
+    background-image: url("./img/enter(2).png");
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
     background-clip: border-box;
-    border: 0px;
+    border: 0;
     height: 100%;
     width: 10%;
     left: 1%;
     top: -12.5%;
-    background-color: rgba(1, 1, 1, 0);
+    background-color: transparent;
 }
+
 h4 {
     position: absolute;
-    /* background-color: gray; */
     left: 35%;
     font-family: monospace;
     font-size: 24px;
 }
+
 #textIn {
     position: relative;
-    border: 0px;
+    border: 0;
     width: 89%;
     height: 100%;
     background-color: transparent;
     font-family: monospace;
     font-size: 24px;
 }
+
 #textIn:focus {
-    outline: 0px;
+    outline: none;
 }
+
 .boxinput {
     position: absolute;
     border: 2px solid black;
@@ -41,6 +44,7 @@ h4 {
     border-radius: 10px;
     text-align: center;
 }
+
 .list {
     display: flex;
     flex-direction: column;
@@ -50,48 +54,55 @@ h4 {
     left: 35%;
     top: 17.5%;
 }
+
 .task {
     display: inline-flex;
-    background-color: rgba(0, 0, 0,0);
+    background-color: transparent;
     border: 2px black double;
     border-radius: 10px;
     margin-top: 10px;
 }
+
 #checkbox {
     position: relative;
     width: 7.5%;
     height: 50%;
     top: 20%;
 }
+
 #checkbox:checked {
-    outline: 0px;
+    outline: none;
     background-color: black;
     color: black;
 }
+
 p {
     width: 80%;
     font-size: 24px;
     font-family: monospace;
 }
+
 #del {
     position: relative;
     width: 10%;
     height: 80%;
     top: 10%;
-    background-color: rgba(0, 0, 0,0);
+    background-color: transparent;
     background-image: url(/src/img/bin.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
-    border: 0px;
+    border: 0;
     border-radius: 10px;
-    box-shadow: 0px 0px 0px 0px black;
+    box-shadow: none;
     transition: 0.5s linear all;
 }
-#checkbox:active{
+
+#checkbox:active {
     background-color: black;
     color: black;
 }
+
 #del:hover {
-    box-shadow: 0px 1px 1px 0px black;
+    box-shadow: 0 1px 1px 0 black;
 }
